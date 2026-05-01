@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a href="1home.html" class="brand" >
+        <h0 style= "font-family: 'Cute Font' color: 'var(--text-color)'" >Home Page</h0>
+      </a>
+    </div>
+
+    <nav class="site-nav">
+      <a href="2biography.html">Biography</a>
+      <a href="3personal-statement.html">Personal Statement</a>
+      <a href="4portfolio.html">Portfolio</a>
+      <a href="5services.html">Services</a>
+      <a href="6contact.html">Contact</a>
+    </nav>
+  </header>
+  <script src="script.js"></script>
+</body>
+</html>
+    <title>My Website</title>
+    <style>
+        /* CSS Styling */
+        :root {
+            --primary-bg: #FCDEDEF4;
+            --secondary-bg: #FFFBFB;
+            --text-color: #333;
+            --accent-color: #007bff;
+        }
+
+        body {
+            font-family: 'Cute Font';
+            margin: 0;
+            color: var(--text-color);
+            background-color: var(--secondary-bg);
+            padding: 0rem 0%;
+            line-height: 1.8 ;
+        }
+
+        header {
+            background: var(--primary-bg);
+            padding: 1.6rem 0%;
+            text-margin: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgb(221,160,160);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+      foot {
+            background: var(--secondary-bg);
+            padding: 1.6rem 0%;
+            text-margin: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            bottom: 0;
+            z-index: 1000
+        
+      }
+      
+      .foot {
+            height: 20vh;
+            text-margin-left: 20px;
+            text-margin-right: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: var(--primary-bg);
+      }
+
+       nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+        }
+
+        .hero {
+            height: 33vh;
+            text-margin-left: 20px;
+            text-margin-right: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: var(--secondary-bg);
+        }
+
+        .projects {
+            padding: 4rem 5%;
+        }
+
+        .filter-buttons {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+      
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border: 1px solid var(--accent-color);
+            background: transparent;
+            color: var(--accent-color);
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        button.active, button:hover {
+            background: var(--accent-color);
+            color: white;
+        }
+
+        .project-grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr); /* 2 columns */
+          gap: 10px;
+          padding: 10px;
+            /*display: grid;
+            align-items: center;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;*/
+        }
+
+        .project-card {
+          width: 300px;
+          border: 3px solid #FFFFFF;
+          border-radius: 8px;
+          overflow: hidden; /* Ensures image corners match card rounding */
+          
+        }
+
+        .card-img {
+          width: 100%; /* Makes image fill the card width */
+          height: 200px; /* Optional: standardizes image height */
+          object-fit: cover; /* Crops image to fill dimensions without stretching */
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .hidden { display: none; 
+      }
+    </style>
+<head>
+<body>
+    <section class="hero" id="portfolio">
+        <h1>Portfolio</h1>
+      <p></p>
+      <p1>My favorite projects that I have done so far in Programming for Digital Media. Please click the following links to access the projects.</p1>
+
+      
+      <a href="https://editor.p5js.org/kzel044049/full/usO6sMKlu">Emoji Tic-Tac-Toe</a>
+      <a href="https://editor.p5js.org/kzel044049/full/zo4sdyObP">Snoopy in the House</a>
+      <a href="https://editor.p5js.org/kzel044049/full/_quKI3QxOf">Micky Mouse</a>      
+
+
+  </section>
+
+    <section class="projects" id="projects">
+        <h3 style="text-align:center">Project Gallery</h3>
+        
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+        </div>
+      <div class="project-grid">
+      <div class = "project-card" data-category = "all">
+        <img src = "peanut.jpg" class = "card-img" style = "height: 300px">
+        <div class = "card-content">
+          <h4>Creative Drawing; Snoopy from Peanut</h4>
+      </div>
+        </div>
+        <div class = "project-card" data-category = "all">
+        <img src = "youloveme.jpg" class = "card-img" style = "height: 300px">
+        <div class = "card-content">
+          <h4>Valentine's Day mini projects; You love me or You love me not</h4>
+    </div>
+        </div>
+          <div class = "project-card" data-category = "all">
+        <img src = "emoji.jpg" class = "card-img" style = "height: 300px">
+        <div class = "card-content">
+          <h4>Interactive Code; Emoji Tic-Tac-Toe</h4>
+      </div>
+        </div>
+        <div class = "project-card" data-category = "all">
+        <img src = "intro.jpg" class = "card-img" style = "height: 300px">
+        <div class = "card-content">
+          <h4>Intro to Coding; Meet Mickey Mouse</h4>
+      </div>
+        </div>
+        
+        </div>
+      
+    <script>
+        // JavaScript for Interactive Project Filtering
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons and add to clicked
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const filter = button.getAttribute('data-filter');
+
+                projectCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    if (filter === 'all' || category === filter) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</section>
+  <section class="foot" id="footnote">
+    <p1>Email me for more specific information!</p1>
+      <p2>kimberly.zelaya.g@gmail.com
+    </p2>
+      </section>
+</body>
+</head>
+</html>

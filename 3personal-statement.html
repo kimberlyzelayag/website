@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a href="1home.html" class="brand" >
+        <h0 style= "color: var(--text-color)" >Home Page</h0>
+      </a>
+    </div>
+
+    <nav class="site-nav">
+      <a href="2biography.html">Biography</a>
+      <a href="3personal-statement.html">Personal Statement</a>
+      <a href="4portfolio.html">Portfolio</a>
+      <a href="5services.html">Services</a>
+      <a href="6contact.html">Contact</a>
+    </nav>
+  </header>
+  <script src="script.js"></script>
+</body>
+</html>
+    <title>My Website</title>
+    <style>
+        /* CSS Styling */
+        :root {
+            --primary-bg: #FCDEDEF4;
+            --secondary-bg: #FFFBFB;
+            --text-color: #333;
+            --accent-color: #007bff;
+        }
+
+        body {
+            font-family: 'Cute Font';
+            margin: 0;
+            color: var(--text-color);
+            background-color: var(--primary-bg);
+            padding: 0rem 0%;
+            line-height: 1.8 ;
+        }
+
+        header {
+            background: var(--primary-bg);
+            padding: 1.6rem 0%;
+            text-margin: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgb(221,160,160);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+      foot {
+            background: var(--secondary-bg);
+            padding: 1.6rem 0%;
+            text-margin: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            bottom: 0;
+            z-index: 1000
+        
+      }
+      
+      .foot {
+            height: 20vh;
+            text-margin-left: 20px;
+            text-margin-right: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: var(--primary-bg);
+      }
+
+       nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+        }
+
+        .hero {
+            height: 15vh;
+            padding: 300px;
+            text-margin: 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: var(--secondary-bg);
+        }
+
+        .projects {
+            padding: 4rem 5%;
+        }
+
+        .filter-buttons {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+      
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border: 1px solid var(--accent-color);
+            background: transparent;
+            color: var(--accent-color);
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        button.active, button:hover {
+            background: var(--accent-color);
+            color: white;
+        }
+
+        .project-grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr); /* 2 columns */
+          gap: 10px;
+          padding: 10px;
+            /*display: grid;
+            align-items: center;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;*/
+        }
+
+        .project-card {
+          width: 300px;
+          border: 3px solid #FFFFFF;
+          border-radius: 8px;
+          overflow: hidden; /* Ensures image corners match card rounding */
+          
+        }
+
+        .card-img {
+          width: 100%; /* Makes image fill the card width */
+          height: 200px; /* Optional: standardizes image height */
+          object-fit: cover; /* Crops image to fill dimensions without stretching */
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .hidden { display: none; 
+      }
+    </style>
+<head>
+<body>
+    <section class="hero" id="personal-statement">
+        <h1>Personal Statement</h1>
+        <p>Coding has always stood out to me as intriguing and entertaining. In previous years, I have coded using javascript on CodeHS for AP Computer Science Principles and this year on p5.js for Programming for Digital Media. Coding can be very difficult at certain times but when you find a solution, it can feel satisfying.
+      </p>
+      <p>In Programing for Digital Media, I have looked forward to coding projects that are interactive as well as aesthetically pleasing. One of the most entertaining projects has been this one of my personal website. To create this website I used a few aspects that display my personality through the website so web users can have a greater idea of who I am.
+              </p>
+      <p>Hopefully I can continue using computer science in the future. My plans for the future are to join the Army National Guard once I finish my senior year. I am still deciding whether I want to continue my studies further. God will lead me to the path best for myself.
+      </p>
+      <p></p>
+    </section>
+  <section class="foot" id="footnote">
+    <p1>Email me for more specific information!</p1>
+      <p2>kimberly.zelaya.g@gmail.com
+    </p2>
+      </section>
+</body>
+</html>
